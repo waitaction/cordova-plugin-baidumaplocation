@@ -152,14 +152,14 @@ public class BaiduMapLocation extends CordovaPlugin {
     public boolean execute(String action, final JSONArray args, CallbackContext callbackContext) throws JSONException {
         cbCtx = callbackContext;
         if ("getCurrentPosition".equalsIgnoreCase(action)) {
-            // if (!needsToAlertForRuntimePermission()) {
-            // performGetLocation();
-            // } else {
+            if (!needsToAlertForRuntimePermission()) {
+                performGetLocation();
+            } else {
+                requestPermission();
+                // 会在onRequestPermissionResult时performGetLocation
+            }
             // requestPermission();
-            // // 会在onRequestPermissionResult时performGetLocation
-            // }
-            requestPermission();
-            performGetLocation();
+            // performGetLocation();
 
             return true;
         }
