@@ -158,12 +158,8 @@ public class BaiduMapLocation extends CordovaPlugin {
                 requestPermission();
                 // 会在onRequestPermissionResult时performGetLocation
             }
-            // requestPermission();
-            // performGetLocation();
-
             return true;
         }
-
         return false;
     }
 
@@ -171,12 +167,12 @@ public class BaiduMapLocation extends CordovaPlugin {
      * 权限获得完毕后进行定位
      */
     private void performGetLocation() {
-        if (mLocationClient == null) {
-            mLocationClient = new LocationClient(this.webView.getContext());
-            mLocationClient.registerLocationListener(myListener);
-            mLocationClient.setLocOption(getDefaultLocationClientOption());
+        if (mLocationClient != null) {
+            mLocationClient.stop();
         }
-
+        mLocationClient = new LocationClient(this.webView.getContext());
+        mLocationClient.registerLocationListener(myListener);
+        mLocationClient.setLocOption(getDefaultLocationClientOption());
         mLocationClient.start();
     }
 
