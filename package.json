@@ -1,17 +1,54 @@
 {
-  "name": "cordova-plugin-baidumaplocation",
-  "version": "4.0.2",
-  "description": "Cordova Geolocation Plugin,use Baidu Map SDK",
+  "_from": "cordova-plugin-baidumaplocation@4.0.2",
+  "_id": "cordova-plugin-baidumaplocation@4.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-ZTNTDLetenQJbJNu0TNkPQ78ZnEvI0g0QDvjizFKeefCJ2yfzA37WPrjbo2D6EY4oFVtkax1T2ALjATUNUXZZw==",
+  "_location": "/cordova-plugin-baidumaplocation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-baidumaplocation@4.0.2",
+    "name": "cordova-plugin-baidumaplocation",
+    "escapedName": "cordova-plugin-baidumaplocation",
+    "rawSpec": "4.0.2",
+    "saveSpec": null,
+    "fetchSpec": "4.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-baidumaplocation/-/cordova-plugin-baidumaplocation-4.0.2.tgz",
+  "_shasum": "d00db17c361d895fc23c97547d82feceb9cd6e53",
+  "_spec": "cordova-plugin-baidumaplocation@4.0.2",
+  "_where": "/Users/chenqijing/Desktop/Code-Demo/myApp",
+  "author": {
+    "name": "aruis"
+  },
+  "bugs": {
+    "url": "https://github.com/aruis/cordova-plugin-baidumaplocation/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-baidumaplocation",
     "platforms": [
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aruis/cordova-plugin-baidumaplocation.git"
+  "deprecated": false,
+  "description": "Cordova Geolocation Plugin,use Baidu Map SDK",
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova-android": ">=5.0.0"
+      },
+      "3.0.0": {
+        "cordova-android": ">=5.0.0"
+      }
+    }
   },
+  "homepage": "https://github.com/aruis/cordova-plugin-baidumaplocation#readme",
   "keywords": [
     "cordova",
     "baidu",
@@ -22,16 +59,11 @@
     "cordova-android",
     "cordova-ios"
   ],
-  "author": "aruis",
   "license": "Apache-2.0",
-  "engines": {
-    "cordovaDependencies": {
-      "2.0.0": { "cordova-android": ">=5.0.0" },
-      "3.0.0": { "cordova-android": ">=5.0.0" }
-    }
+  "name": "cordova-plugin-baidumaplocation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aruis/cordova-plugin-baidumaplocation.git"
   },
-  "bugs": {
-    "url": "https://github.com/aruis/cordova-plugin-baidumaplocation/issues"
-  },
-  "homepage": "https://github.com/aruis/cordova-plugin-baidumaplocation#readme"
+  "version": "4.0.2"
 }

@@ -1,3 +1,5 @@
+# 此版本仅适用于 cordova@9.0.0 以上 及 cordova-android@8.0.0 以下
+
 # 百度地图定位Cordova插件，支持Android，IOS，ionic 1x 2x 均可使用
 
 ### UPDATE:
